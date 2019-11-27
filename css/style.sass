@@ -5,33 +5,38 @@ $four-color: linear-gradient(90deg, #9400D3 0%, #4B0082 100%)
 
 body
   overflow-x: hidden
+
 p
   color: $text-color
 
 .navbar-brand
   font-family: Pacifico, sans-serif
 
-  //background
+//background
 #bg1
   position: absolute
   top: 0
   left: 0
   right: 0
   z-index: -2
+
 #bg2
   position: absolute
   top: 0
   left: 0
   right: 0
   z-index: -1
+
 .bg-container-bottom
   position: relative
+
 #bg3
   position: absolute
   bottom: 0
   left: 0
   right: 0
   z-index: -2
+
 #bg4
   position: absolute
   bottom: 0
@@ -41,48 +46,56 @@ p
 
 @keyframes animateWave
   0%
-    transform: scale(1,0)
+    transform: scale(1, 0)
   100%
-    transform: scale(1,1)
+    transform: scale(1, 1)
+
 #bg1
   svg
     display: block
     transform-origin: top
     animation: animateWave 5000ms cubic-bezier(0.23, 1, 0.32, 1) forwards
+
 #bg2
   svg
     display: block
     transform-origin: top
     animation: animateWave 5000ms cubic-bezier(0.23, 1, 0.32, 1) forwards
+
 #bg3
   svg
     display: block
     transform-origin: bottom
     animation: animateWave 5000ms cubic-bezier(0.23, 1, 0.32, 1) forwards
+
 #bg4
   svg
     display: block
     transform-origin: bottom
     animation: animateWave 5000ms cubic-bezier(0.23, 1, 0.32, 1) forwards
 
-
-  //welcome page
+.border-radius-8
+  border-radius: 8px
+//welcome page
 .title-hi
   font-size: 10rem
   margin-bottom: 0
 
-  //about page
+//about page
 
 .about-container
   position: relative
+
 .about-title
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.25)
   width: 30rem
   background: $second-color
   position: relative
   padding: 2rem
+
 .about-title > p:first-child
   font-size: 5rem
+
 .about-content
   width: 50rem
   position: absolute
@@ -90,41 +103,50 @@ p
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.25)
   top: 16rem
   left: 10rem
+
 .programming-language
   padding: 2rem
+
 .programming-language > p
   font-size: 2rem
   text-align: center
   color: black
+
 .programming-language-item
   display: flex
   flex-direction: row
   justify-content: space-between
+
 .item
   width: 100px
   height: auto
+
 .item
   img
     object-fit: cover
+
 .item
   p
     font-size: 1rem
     color: black
     text-align: center
+
 .ability-item
-   display: flex
-   flex-direction: row
-   justify-content: space-around
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+
 .ability-item
   img
     width: 40px
     height: auto
+
 .ability
   p
     color: black
     text-align: center
 
-  //case study content
+//case study content
 .case-study
   margin-top: 40rem
   position: relative
@@ -141,15 +163,19 @@ p
     font-size: 5rem
     text-align: center
     color: $text-color
+
 .card
   width: 20rem
   margin-bottom: 50px
   transition: box-shadow 0.3s ease-out
   overflow: hidden
+
 .card:hover
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.25)
+
   .img-container
     transform: translateY(-200px)
+
     img
       opacity: 0.5
 //case study item
@@ -161,15 +187,19 @@ p
   height: 100%
   transition: transform 0.3s ease-out
   z-index: 2
+
 .img-container:hover
   cursor: pointer
+
 .img-container
   img
     width: 100%
     height: 100%
     transition: opacity 0.3s ease-out
+
 .case-study-item
   width: 20%
+
 .card-body
   background: $second-color
   position: absolute
@@ -177,15 +207,18 @@ p
   left: 0
   width: 100%
   box-sizing: border-box
+
 .card-title
   color: $text-color
 
 //footer
 .footer
   margin-top: 300px
+
 .footer
   p
     text-align: center
+
 .wanna-text
   font-family: Roboto, sans-serif
   font-weight: lighter
@@ -194,9 +227,11 @@ p
 
 .contact
   align-items: center
+
 .email
   font-size: 48px
   font-family: "Open Sans", sans-serif
+
 .sent-email-button
   background-color: white
   font-size: 72px
@@ -209,10 +244,12 @@ p
   padding-top: 200px
   padding-bottom: 100px
   align-items: center
+
 .social-item > a
   color: $text-color
   font-size: 24px
   font-weight: lighter
+
 .home-link
   a
     font-family: Pacifico, sans-serif
