@@ -2,6 +2,7 @@
   "name": "Portfolio",
   "version": "1.0.0",
   "dependencies": {
-    "animejs": "latest"
-  }
+    "animejs": "^3.1.0"
+  },
+  "type": "module"
 }
